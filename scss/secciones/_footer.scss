@@ -1,0 +1,20 @@
+/*mixin con parametro*/
+
+@mixin fondo-coral ($fondo) {
+    background-color: $fondo;
+    color: black;
+    text-align: center;
+    font-family: $principal;
+}
+
+.parrafo2{
+   @include fondo-coral($coral); 
+}
+
+.parrafo3{
+    @include fondo-coral($amarillo);
+}
+
+.parrafo4{
+    @include fondo-coral($verde-fuerte);
+}
